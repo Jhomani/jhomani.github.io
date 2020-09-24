@@ -21,9 +21,31 @@ body{
 	position: fixed !important;
 	z-index: 3;
 	display: none;
-  background-color: #011627;
+  background-color: #010d1a;
 	color: #FDFFFC;
-	transition: 0.6s ease-out;
+	/* transition: 0.6s ease-out; */
+}
+.animate-left {
+	position: relative;
+	animation: animateleft 0.4s;
+}
+
+@keyframes animateleft{
+	from { left:-300px; opacity:0 }
+	to { left:0;opacity:1 } 
+}
+
+.nav-tags {
+	border-bottom: 1px solid #fff;
+}
+.tag {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #fff;
+}
+
+.tag:hover {
+	background: rgba(53, 120, 138, 0.4);
 }
 
 .overlay{
@@ -41,12 +63,11 @@ body{
 	height: 150px;
 	border-radius: 15px;
 	overflow: hidden;
-	border: 2px solid #000;
+	/* border: 2px solid #63cace; */
 }
 .profile > img {
 	object-fit: cover;
 	object-position: top;
-	filter: grayscale(100%);
 }
 
 .page-section {
@@ -54,34 +75,77 @@ body{
 }
 
 .bar-skill{
-	width: 230px;
 	height: 28px;
 	border: 2px solid #000;
 	border-radius: 10px;
 	position: relative;
 }
 
-.openSidebar {
-	display: block;
-}
-
 .projects-cart{
 	width: 290px;
-	background: #262137;
+	background: #172737;
 	color: #fff;
 	border-radius: 15px;
 	text-align: center;
 	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
 }
 
-@media (min-width: 850px) {
+.btn-jhomani {
+	background: #3abba7 !important;
+	color: #fff !important;
+}
+
+.btn-jhomani-repo {
+	background: none !important;
+	color: #63cace !important;
+	border: 2px solid #64cace !important;
+}
+
+.btn-jhomani-repo:hover {
+	background: #63cace !important;
+	color: #fff !important;
+	border: 2px solid #63cace !important;
+}
+
+.footer {
+	height: 200px;
+	border-radius: 25px 25px 0 0;
+}
+.footer img:hover {
+	opacity: .5;
+}
+
+.footer .whatsapp {
+	background:#1ebea5
+}
+.footer .gmail {
+	background:#d93025
+}
+
+.main-contact{
+	color: white;
+}
+.main-contact:hover {
+	color: white;
+	opacity: .5;
+}
+
+.footer  a:hover {
+	text-decoration: none;
+}
+
+
+
+@media (min-width: 800px) {
 	.sidebar {
 		display: block !important;
-	}
-	.page-section {
-		margin-left: 240px;
+		/* opacity: 1 !important; */
+		/* z-index: 3 !important; */
 	}
 	.openSidebar {
 		display: none;
+	}
+	.page-section {
+		margin-left: 240px;
 	}
 }
