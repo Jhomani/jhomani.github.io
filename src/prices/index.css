@@ -1,0 +1,32 @@
+.card-product {
+  width: 320px;
+  background: rgba(255,255,255, .1);
+  border-radius: 20px;
+}
+
+.btn-price {
+  border: none;
+  outline: none !important;
+  background: linear-gradient(to left, rgba(29, 212, 215, 0.3), rgba(85, 235, 47, 0.3));
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 15px;
+  background:  #54b688ff;
+  transition: background .5s;
+}
+.btn-price:hover, .btn-price:active {
+  background:  #54b68899;
+}
+
+.icon-price:hover, .icon-price:active {
+  transform: rotate(360deg);
+}
+.icon-price{
+  transition: all 1s;
+}
+
+@media (max-width: 380px) {
+.card-product {
+  width: 100%;
+}
+}

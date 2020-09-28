@@ -1,0 +1,19 @@
+.box-resume {
+  width: 100%;
+	background: #151e29;
+	color: #fff;
+	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+}
+
+.avatar-resume {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+	margin: auto;
+}
+
+.avatar-resume > img{
+  object-fit: cover;
+  object-position: top;
+}
