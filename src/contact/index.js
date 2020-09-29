@@ -14,15 +14,33 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
 
+const form = document.getElementById('contact-form');
+const alert = document.getElementById('alert');
 
-db.collection("users").add({
-  first: "Ada",
-  last: "Lovelace",
-  born: 1815
-})
-.then(function(docRef) {
-  console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-  console.error("Error adding document: ", error);
-});
+form.addEventListener('submit', hanldleForm)
+
+function hanldleForm (ev) {
+  ev.preventDefault();
+
+  document.getElementById('btn-submit').innerHTML ="Enviando..."
+
+  db.collection("Contacts").add({
+    name: ev.target[0].value,
+    email: ev.target[1].value,
+    package: ev.target[2].value,
+    message: ev.target[3].value,
+  })
+  .then(function(docRef) {
+    alert.style="display: table"
+    setTimeout(() => alert.style = "display: none", 5000);
+    ev.target[0].value = '';
+    ev.target[1].value = '';
+    ev.target[2].value = '';
+    ev.target[3].value = '';
+
+    document.getElementById('btn-submit').innerHTML ="Enviar Ahora"
+  })
+  .catch(function(error) {
+    console.error("Error adding document: ", error);
+  });
+}

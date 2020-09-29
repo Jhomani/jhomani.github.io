@@ -73,6 +73,15 @@ const projects = [
 	},
 ]
 
+const skills = [ 
+	{ porsent: 90, name: 'HTML & CSS', colors: ['#42bd30', '#e6e21f'] },
+	{ porsent: 80, name: 'MySQL', colors: ['#300dd7', '#21cddf']  },
+	{ porsent: 80, name: 'Vue js', colors: ['#f0f', '#0ff']  },
+	{ porsent: 60, name: 'React js', colors: ['#7d79ff', '#7d00c4']  },
+	{ porsent: 60, name: 'PHP & Laravel', colors: ['#d90c92', '#7d00c4']  },
+	{ porsent: 50, name: 'Node js', colors: ['#b52525', '#e6e21f']  },
+];
+
 
 const _projects = document.getElementById('projects')
 for(let project of projects) {
@@ -107,6 +116,32 @@ for(let project of projects) {
 		</div>
 	`
 }
+const _skills = document.getElementById('skills');
+
+for(let skill of skills) {
+	_skills.innerHTML  += 
+	`
+		<div class="col-12 col-sm-6 my-3">
+			<h4>${skill.name}</h4>
+			<div class="bar-skill">
+				<div 
+					style="
+						position: absolute;
+						border-radius: 10px;
+						top: 0;
+						left: 0;
+						height: 100%;
+						width: ${skill.porsent}%;
+						text-align: center;
+						background: linear-gradient(to right, 
+							${skill.colors[0]}, ${skill.colors[1]});
+					"
+				>${skill.porsent}%</div>
+			</div>
+		</div>
+	`
+}
+
 
 function openDetails(id) {
   localStorage.clear();

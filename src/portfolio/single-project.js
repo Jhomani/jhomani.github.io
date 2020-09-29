@@ -125,3 +125,6 @@ projects[index].galery.forEach( (item, i) => {
   `;
 })
 
+function goBack() {
+  window.history.back();
+}

@@ -23,7 +23,7 @@
       <h4 class="my-4" style="font-family: Arial, Helvetica, sans-serif;"><b>Carlos Mamani</b></h4>
 			<div class="profile">
 				<img 
-					src="https://cdn.quasar.dev/img/boy-avatar.png" 
+					src="https://i.imgur.com/Y5mtr7w.jpg" 
 					height="100%" 
 					width="100%" 
 					alt="profile"
@@ -44,7 +44,7 @@
         </a>
       </li>
       <li class="p-2">
-        <a href="https://www.github.com/jhomani" target="_blank">
+        <a href="https://www.linkedin.com/in/juan-carlos-mamani-flores-6316441a7/" target="_blank">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -90,16 +90,19 @@
       </a>
     </div>
 
-    <div class="toggle-mode">
+    <div class="toggle-mode text-center" style="font-size: 25px;">
       <hr style="border-top-color: #fff2; margin: 10px 0">
 
-      <input type="checkbox" id="toggle" name="chkTest" class="d-none">
-      <label 
-        class="toggle position-relative ml-3 mt-2 mb-3" 
-        style="margin-right: 60px; cursor: pointer;"
-        for="toggle">
-        Modo Oscuro
-      </label>
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-bootstrap"></i>
+      <i class="fab fa-js-square"></i>
+      <img 
+        src="../../assets/firebase.png" 
+        alt="firebase"
+        width="28px"
+        style="margin: 0 0 7px -4px; filter: grayscale(100%);"
+       >
     </div>
 	</nav>
   <!-- /nav sidebar -->
@@ -117,13 +120,18 @@
           onclick="openSidebar()"
         ></i>
 
-        <input type="checkbox" id="toggle" name="chkTest" class="d-none">
-        <label 
-          class="toggle position-relative" 
-          style="margin-right: 60px; cursor: pointer;"
-          for="toggle">
-          Modo Oscuro
-        </label>
+        <div style="font-size: 25px">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-bootstrap"></i>
+          <i class="fab fa-js-square"></i>
+          <img 
+            src="../../assets/firebase.png" 
+            alt="firebase"
+            width="28px"
+            style="margin: 0 0 9px -4px; filter: grayscale(100%);"
+          >
+        </div>
 
       </div>
     </div>
@@ -137,12 +145,15 @@
           >
             Servicios & Precios
           </h1>
-          <p class="m-5 text-center">
+          <p class="mx-md-5 mx-2 my-3 text-center">
              Por motivos de inicio como <b style="color: var(--primary);">Desarrollador Freelance</b>, te ofresco los mejores precios del mercado el lo que se trata de applicaciones Web y Moviles desarrolladas con tecnologias modernas.
           </p>
         </div>
       </div>
-      <div class="row px-3">
+
+      <hr style="border-top-color: #fff2; margin: 10px 0">
+
+      <div class="row px-3 mt-5">
         <div class="col text-center mb-3">
           <div class="card-product p-4 mx-auto">
             <i class="fab fa-shopify mb-3 icon-price" style="font-size: 120px;"></i>
@@ -158,7 +169,7 @@
               <p><i class="fas fa-times mr-3" style="color: var(--danger)"></i>Carrito de Compras</p>
               <p><i class="fas fa-times mr-3" style="color: var(--danger)"></i>Pasarela de Pagos</p>
             </div>
-            <button class="btn-price">Hacer Reserva</button>
+            <button class="btn-price" onclick="goContant()">Hacer Reserva</button>
           </div>
         </div>
         <div class="col text-center mb-3">
@@ -176,7 +187,7 @@
               <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Carrito de Compras</p>
               <p><i class="fas fa-times mr-3" style="color: var(--danger)"></i>Pasarela de Pagos</p>
             </div>
-            <button class="btn-price">Hacer Reserva</button>
+            <button class="btn-price" onclick="goContant()">Hacer Reserva</button>
           </div>
         </div>
         <div class="col text-center">
@@ -194,7 +205,7 @@
               <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Pasarela de pagos</p>
               <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Correos corporativos.</p>
             </div>
-            <button class="btn-price">Hacer Reserva</button>
+            <button class="btn-price" onclick="goContant()">Hacer Reserva</button>
           </div>
         </div>
       </div>
