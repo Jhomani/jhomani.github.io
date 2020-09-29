@@ -1,7 +1,7 @@
 const projects = [ 
 	{ 
     id: 0,
-		image: 'https://i.imgur.com/WzfajCL.png',
+		image: 'https://i.imgur.com/zpOdgib.png',
 		name: "Furcio's Client", 
 		description:'Projecto de Equipo de SWC en el que participe.',  
 		tecnologic: ['Reactjs'], 
