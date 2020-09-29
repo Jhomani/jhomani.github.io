@@ -113,12 +113,12 @@ projects[index].galery.forEach( (item, i) => {
     return;
   }
 
-  if(projects[index].galery.length === 3) {
-    galery.innerHTML += `
-      <span style="--i:${i + 1};"><img src=${item}></span> 
-    `;
-    return;
-  }
+  // if(projects[index].galery.length === 3) {
+  //   galery.innerHTML += `
+  //     <span style="--i:${i + 1};"><img src=${item}></span> 
+  //   `;
+  //   return;
+  // }
 
   galery.innerHTML += `
     <span style="--i:${i + 1};"><img src=${item}></span> 
