@@ -129,6 +129,21 @@ input[type="checkbox"]:checked + label::before {
 	color: #fff !important;
 }
 
+.btn-price {
+  border: none;
+  outline: none !important;
+  background: linear-gradient(to left, rgba(29, 212, 215, 0.3), rgba(85, 235, 47, 0.3));
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 15px;
+  background:  #54b688ff;
+  transition: background .5s;
+}
+.btn-price:hover, .btn-price:active {
+  background:  #54b68899;
+}
+
+
 .btn-dark {
 	background: var(--dark) !important;
 }
@@ -150,7 +165,7 @@ input[type="checkbox"]:checked + label::before {
 
 .animation-area div {
   position: absolute;
-  background: rgba(102, 188, 102, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   animation: background-ani 20s linear infinite;
   bottom: -150px;
 }

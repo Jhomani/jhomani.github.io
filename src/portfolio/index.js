@@ -1,5 +1,42 @@
 const projects = [ 
 	{ 
+    id: 0,
+		image: 'https://i.imgur.com/WzfajCL.png',
+		name: "Furcio's Client", 
+		description:'Projecto de Equipo de SWC en el que participe.',  
+		tecnologic: ['Reactjs'], 
+		colors: ['#41aecc'], 
+		action: [ "https://jhomani-video.herokuapp.com", "https://github.com/Jhomani/ReactBasic"]
+	},
+	{ 
+    id: 3,
+		image: 'https://i.imgur.com/VFPxzrr.png', 
+		name: "Furcio's Admin", 
+		description:'Projecto de Equipo de SWC en el que participe.',  
+		tecnologic: ['Laravel', 'Vuejs'], 
+		colors: ['#ff2d20', '#2ba26c'],
+		action: ["https://jhomani-videos.herokuapp.com", "https://github.com/Jhomani/admin-panel"]
+  },
+	{ 
+    id: 1,
+		image: 'https://i.imgur.com/59a1VED.png',
+		name: 'onDelivery Driver', 
+		description:'Projecto de Equipo de SWC en el que participe.',  
+		tecnologic: ['Reactjs'], 
+		colors: ['#41aecc'], 
+		action: [ "https://jhomani-video.herokuapp.com", "https://github.com/Jhomani/ReactBasic"]
+	},
+	{ 
+    id: 2,
+		image: 'https://i.imgur.com/FDeHxvy.png',
+		name: "onDelivery-Client",
+		description:'Projecto de Equipo de SWC en el que participe.',  
+		tecnologic: ['Quasar', 'Laravel'], 
+		colors: ['blue', '#ff2d20'],
+		action: ["https://quiz-jhomani.herokuapp.com/", "https://github.com/Jhomani/quiz"]
+  },
+	{ 
+    id: 4,
 		image: 'https://i.imgur.com/0ZjmfvG.png?1', 
 		name: 'Video Collection', 
 		description:'Desrrollando min conocimientos de Reactjs', 
@@ -8,14 +45,7 @@ const projects = [
 		action: ["https://jhomani-videos.herokuapp.com", 'https://github.com/Jhomani/reactProject']
 	},
 	{ 
-		image: 'https://i.imgur.com/9hJ4bdD.png',
-		name: "Quiz Online",
-		description:'Desarrolando mis conocimientos en Vuejs',  
-		tecnologic: ['Vuejs'], 
-		colors: ['#2ba26c'],
-		action: ["https://quiz-jhomani.herokuapp.com/", "https://github.com/Jhomani/quiz"]
-  },
-	{ 
+    id: 6,
 		image: 'https://i.imgur.com/PdiHKh8.png', 
 		name: 'Simon Say', 
 		description: 'Dearrollando mis conocimientos de Javascript sin framework', 
@@ -24,6 +54,7 @@ const projects = [
 		action: ["https://jhomani.github.io/simon-says/", "https://github.com/Jhomani/simon-says"]
   },
 	{ 
+    id: 7,
 		image: 'https://i.imgur.com/HNmXxdV.png', 
 		name: 'Adop Pets', 
 		description: 'Adquiri conocimientos de basicos Vuejs', 
@@ -32,14 +63,7 @@ const projects = [
 		action: ["https://adopt-pets-jho.herokuapp.com/", "https://github.com/Jhomani/adopt-pets"]
   },
 	{ 
-		image: 'https://i.imgur.com/WIbg7q6.png', 
-		name: "Admin Panel", 
-		description: 'Adquiri conocimientos de mas profundos de Laravel y Vuejs', 
-		tecnologic: ['Laravel', 'Vuejs'], 
-		colors: ['#ff2d20', '#2ba26c'],
-		action: ["https://jhomani-videos.herokuapp.com", "https://github.com/Jhomani/admin-panel"]
-  },
-	{ 
+    id: 5,
 		image: 'https://i.imgur.com/rGV0Rtu.png',
 		name: 'Platzi Conf', 
 		description:'Adquiri conocimientos basicos de Reactjs', 
@@ -57,10 +81,11 @@ for(let project of projects) {
 			<div class=" position-relative">
 				<img 
 					src="${project.image}" 
-					width="260px" 
+          width="260px" 
+          height="146px"
 					alt="img"
 					class="rounded"
-					style="margin-top: -15px;"
+					style="margin-top: -15px; object-fit: cover; object-position: top"
 				>
 				<h5 
 					class="position-absolute py-1" 
@@ -77,8 +102,14 @@ for(let project of projects) {
 				<p class="px-1">${project.description}</p>
 			</div>
 			<div>
-				<a href="#" class="btn btn-success btn-jhomani btn-sm">Ver detalles...</a>
+				<button onclick=openDetails(${project.id}) class="btn-price btn-jhomani btn-sm">Ver detalles...</button>
 			</div>
 		</div>
 	`
+}
+
+function openDetails(id) {
+  localStorage.clear();
+  localStorage.setItem('id', id);
+  window.location = '/src/portfolio/single-project.html'
 }

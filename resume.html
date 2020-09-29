@@ -8,14 +8,24 @@
   <link rel="stylesheet" href="./src/global.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    *{
+      color: black ;
+      background-color:white;
+    }
+    body, .box-resume {
+      background: white !important;
+      color: black;
+    }
+  </style>
 </head>
 <body>
   <div class="box-resume p-3 mt-0">
     <div class="row">
       <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
         <h1 
-          style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;"
-          class="text-weight-bold"
+          style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: var(--primary);"
+          class="font-weight-bold"
         >
           Juan Carlos Mamani Flores
         </h1>
@@ -34,7 +44,9 @@
           jhomanidev@gmail.com <i class="fas  fa-envelope-square ml-2"style="font-size: 20px" ></i>
         </div>
         <div class="d-flex align-items-center">
-          jhomani.github.io <i class="fas fas fa-globe ml-2"style="font-size: 20px" ></i>
+          <a href="https://jhomani.github.io" class="font-weight-bold">
+            jhomani.github.io <i class="fas fas fa-globe ml-2"style="font-size: 20px" ></i>
+          </a>
         </div>
       </div>
       <div style="font-size: 15px;" class="col-12 d-flex flex-column align-items-start d-md-none my-2">
@@ -45,14 +57,16 @@
             <i class="fas  fa-envelope-square mr-2"style="font-size: 20px" ></i> jhomanidev@gmail.com
         </div>
         <div class="d-flex align-items-center">
-            <i class="fas fas fa-globe mr-2"style="font-size: 20px" ></i> jhomani.github.io
+            <a href="https://jhomani.github.io">
+              <i class="fas fas fa-globe mr-2"style="font-size: 20px" ></i> jhomani.github.io
+            </a>
         </div>
       </div>
     </div>
-    <hr style="border-top-color: #fff2; margin: 10px 0">
+    <hr style="border-top-color: #0005; margin: 10px 0">
     <div class="row">
       <div class="col-6 col-sm-4 col-lg-2 offset-lg-0 offset-3 offset-sm-4 my-auto">
-        <div class="avatar-resume">
+        <div class="avatar-resume" style="border: 2px solid var(--primary);">
           <img 
             src="https://i.imgur.com/bnOr5Gr.jpg?1" 
             height="100%" 
@@ -62,15 +76,15 @@
         </div>
       </div>
       <div class="col-12 col-lg-10 mt-2">
-        <p> Empece en el mundo de la programacion a mediados del año 2019, el primer Lenguge que aprendi fue Java, ya por los principios del año 2020 me meti en el deasrrollo web aprendiendo Javascript y actualmente me estoy especializando en este campo haciendo paginas Web y Apps Moviles hibridas con React Native(React) y Quasar Framework(Vue). </p>
+        <p> Empece en el mundo de la programacion a mediados del año 2019, el primer Lenguge que aprendi fue Java, ya por los principios del año 2020 me meti de lleno en el deasrrollo web aprendiendo HTML, CSS y Javascript, actualmente me estoy especializando en este campo haciendo paginas Web y Apps Moviles hibridas con React Native(React) y Quasar Framework(Vue). </p>
       </div>
     </div>
-    <hr style="border-top-color: #fff2; margin: 10px 0">
+    <hr style="border-top-color: #0005; margin: 10px 0">
     <div class="row mt-4">
       <div class="col-lg-8 col-12">
         <h4 
           class="my-1"
-          style="border-left: 4px solid var(--primary);"
+          style="border-left: 4px solid var(--primary); color: var(--primary);"
         >
           &nbsp Experiencia Laboral
         </h4>
@@ -90,7 +104,7 @@
         </div>
         <h4 
           class="my-1"
-          style="border-left: 4px solid var(--primary);"
+          style="border-left: 4px solid var(--primary); color: var(--primary);"
         >
           &nbsp Proyectos
         </h4>
@@ -105,11 +119,14 @@
           <span style="color: rgb(110, 110, 110); font-size: .8em;">Open Source</span>
         </div>
         <p style="font-size: .9em">Es un aplicacion Web donde puedes encontrar videos y añadir a tus favoritos y tambien puedes realizar un busqueda y mas, Lo hice utilizando Reactjs y Redux para el manejo del store y obiamente React-Router.</p>
+        <p style="font-size: .9em; text-align: center" class="mt-4">
+          Para ver todos mis proyectos visita mi sitio web <a href="https://jhomani.github.io" style="color: var(--primary) !important; font-weight: 800;">jhomani.github.io
+         </a></p>
       </div>
       <div class="col-lg-4 col-12">
         <h4 
           class="my-1"
-          style="border-left: 4px solid var(--primary);"
+          style="border-left: 4px solid var(--primary); color: var(--primary);"
         >
           &nbsp Habilidades
         </h4>
@@ -129,7 +146,7 @@
         </ul>
         <h4 
           class="my-1"
-          style="border-left: 4px solid var(--primary);"
+          style="border-left: 4px solid var(--primary); color: var(--primary);"
         >
           &nbsp Educacion
         </h4>
@@ -141,7 +158,7 @@
         </ul>
         <h4 
           class="my-1"
-          style="border-left: 4px solid var(--primary);"
+          style="border-left: 4px solid var(--primary); color: var(--primary);"
         >
           &nbsp Idiomas
         </h4>
@@ -151,7 +168,7 @@
         </ul>
       </div>
     </div>
-    <hr style="border-top-color: #fff2; margin: 10px 0">
+    <hr style="border-top-color: #0005; margin: 10px 0;">
     <div class="row">
       <div class="col">
         <div class="d-lg-flex justify-content-center d-block py-2">

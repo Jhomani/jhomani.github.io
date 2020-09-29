@@ -7,11 +7,11 @@
 // 	{ porsent: 50, name: 'Node js', colors: ['#b52525', '#e6e21f']  },
 // ];
 
-// const language = [ 
-// 	{ porsent: 80, name: 'Ingles(Lectura)', colors: ['#f0f', '#0ff']  },
-// 	{ porsent: 80, name: 'Ingles(Escrituta)', colors: ['#42bd30', '#e6e21f'] },
-// 	{ porsent: 60, name: 'Ingles(Habla)', colors: ['#300dd7', '#21cddf']  },
-// ];
+const language = [ 
+	{ porsent: 80, name: 'Ingles (Lectura)', colors: ['#f0f', '#0ff']  },
+	{ porsent: 80, name: 'Ingles (Escrituta)', colors: ['#42bd30', '#e6e21f'] },
+	{ porsent: 60, name: 'Ingles (En el Habla)', colors: ['#300dd7', '#21cddf']  },
+];
 
 // const _skills = document.getElementById('skills');
 
@@ -39,32 +39,33 @@
 // 	`
 // }
 
+const _language = document.getElementById('language');
 
-// const _language = document.getElementById('language');
-
-// for(let skill of language) {
-// 	_language.innerHTML  += 
-// 	`
-// 		<div class="m-3 col-12">
-// 			<h4>${skill.name}</h4>
-// 			<div class="bar-skill">
-// 				<div 
-// 					style="
-// 						position: absolute;
-// 						border-radius: 10px;
-// 						top: 0;
-// 						left: 0;
-// 						height: 100%;
-// 						width: ${skill.porsent}%;
-// 						text-align: center;
-// 						background: linear-gradient(to right, 
-// 							${skill.colors[0]}, ${skill.colors[1]});
-// 					"
-// 				>${skill.porsent}%</div>
-// 			</div>
-// 		</div>
-// 	`
-// }
+if(_language) {
+  for(let skill of language) {
+    _language.innerHTML  += 
+    `
+      <div class="col-12 col-lg-4 mt-4">
+        <h4>${skill.name}</h4>
+        <div class="bar-skill">
+          <div 
+            style="
+              position: absolute;
+              border-radius: 10px;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: ${skill.porsent}%;
+              text-align: center;
+              background: linear-gradient(to right, 
+                ${skill.colors[0]}, ${skill.colors[1]});
+            "
+          >${skill.porsent}%</div>
+        </div>
+      </div>
+    `
+  }
+}
 
 
 function openSidebar () {
