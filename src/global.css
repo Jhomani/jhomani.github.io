@@ -1,42 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
-:root{
-  --primary: #54B689 !important;
+:root {
+  --primary: #54b689 !important;
   --secondary: #1e2a3a !important;
   --text: #fff !important;
-  --dark: #2f435c !important
+  --dark: #2f435c !important;
 }
 
-html{
+html {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
 }
-*,*:before, *:after{
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-body{
+body {
   max-width: 1600px;
-	margin: 0;
-  font-family: 'Raleway', sans-serif !important;
+  margin: 0;
+  font-family: "Raleway", sans-serif !important;
 }
-.contaner{
-	margin: none auto;
+.contaner {
+  margin: none auto;
 }
-.sidebar{
+.sidebar {
   height: 100%;
   width: 240px;
-	position: fixed !important;
-	z-index: 3;
-	display: none;
+  position: fixed !important;
+  z-index: 3;
+  display: none;
   background-color: #1e2a3a;
   color: var(--text);
   overflow: auto;
-	animation: animateleft 0.4s;
+  animation: animateleft 0.4s;
 }
 .socialnetwork > li {
   display: inline-block;
-  background-color: #54B689; 
+  background-color: #54b689;
   color: #fff !important;
   border-radius: 100%;
   width: 40px;
@@ -44,37 +46,45 @@ body{
   text-align: center;
 }
 .socialnetwork > li:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: inherit !important;
 }
 
-@keyframes animateleft{
-	from { left:-300px; opacity:0 }
-	to { left:0;opacity:1 } 
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
-.tag:hover, .tag:active {
-  color: #54B689 ;
+.tag:hover,
+.tag:active {
+  color: #54b689;
 }
 
 .toggle::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   border: 2px solid var(--primary);
   border-radius: 20px;
-  background: rgba( 255,255,255, .2);
+  background: rgba(255, 255, 255, 0.2);
   right: -65px;
   width: 60px;
   height: 30px;
 }
 
 .toggle::before {
-  content: '';
+  content: "";
   z-index: 1;
   position: absolute;
   background: var(--primary);
@@ -84,31 +94,31 @@ a, a:hover {
   right: -62px;
   width: 28px;
   height: 24px;
-  transition: right .1s ease-in;
+  transition: right 0.1s ease-in;
 }
 
 input[type="checkbox"]:checked + label::before {
   right: -36px;
 }
 
-.overlay{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 2;
-	background: rgba(0, 0, 0, .6);
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
 }
-.profile{
-	width: 60%;
-	margin: 0 auto;
-	border-radius: 100%;
-	overflow: hidden;
+.profile {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .profile > img {
-	object-fit: cover;
-	object-position: top;
+  object-fit: cover;
+  object-position: top;
 }
 
 .page-section {
@@ -117,35 +127,39 @@ input[type="checkbox"]:checked + label::before {
   color: #fff;
 }
 
-.bar-skill{
-	height: 28px;
-	border: 2px solid #313130;
-	border-radius: 10px;
-	position: relative;
+.bar-skill {
+  height: 28px;
+  border: 2px solid #313130;
+  border-radius: 10px;
+  position: relative;
 }
 
-.btn-success{
-	background: var(--primary) !important;
-	color: #fff !important;
+.btn-success {
+  background: var(--primary) !important;
+  color: #fff !important;
 }
 
 .btn-price {
   border: none;
   outline: none !important;
-  background: linear-gradient(to left, rgba(29, 212, 215, 0.3), rgba(85, 235, 47, 0.3));
+  background: linear-gradient(
+    to left,
+    rgba(29, 212, 215, 0.3),
+    rgba(85, 235, 47, 0.3)
+  );
   color: #fff;
   padding: 6px 8px;
   border-radius: 15px;
-  background:  #54b688ff;
-  transition: background .5s;
+  background: #54b688ff;
+  transition: background 0.5s;
 }
-.btn-price:hover, .btn-price:active {
-  background:  #54b68899;
+.btn-price:hover,
+.btn-price:active {
+  background: #54b68899;
 }
-
 
 .btn-dark {
-	background: var(--dark) !important;
+  background: var(--dark) !important;
 }
 
 .toggle-mode {
@@ -159,7 +173,6 @@ input[type="checkbox"]:checked + label::before {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .1);
   overflow: hidden;
 }
 
@@ -170,39 +183,39 @@ input[type="checkbox"]:checked + label::before {
   bottom: -150px;
 }
 
-.animation-area div:nth-child(1){
+.animation-area div:nth-child(1) {
   left: 5%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
 }
-.animation-area div:nth-child(2){
+.animation-area div:nth-child(2) {
   left: 15%;
   width: 40px;
   height: 40px;
   animation-delay: 1.5s;
   animation-duration: 10s;
 }
-.animation-area div:nth-child(3){
+.animation-area div:nth-child(3) {
   left: 30%;
   width: 100px;
   height: 100px;
   animation-delay: 5.5s;
 }
-.animation-area div:nth-child(4){
+.animation-area div:nth-child(4) {
   left: 50%;
   width: 150px;
   height: 150px;
   animation-delay: 0s;
   animation-duration: 15s;
 }
-.animation-area div:nth-child(5){
+.animation-area div:nth-child(5) {
   left: 70%;
   width: 40px;
   height: 40px;
   animation-delay: 5s;
 }
-.animation-area div:nth-child(6){
+.animation-area div:nth-child(6) {
   left: 85%;
   width: 110px;
   height: 110px;
@@ -210,7 +223,7 @@ input[type="checkbox"]:checked + label::before {
   animation-duration: 12s;
 }
 
- @keyframes background-ani {
+@keyframes background-ani {
   from {
     transform: translateY(0) rotate(0deg);
     opacity: 0;
@@ -219,22 +232,22 @@ input[type="checkbox"]:checked + label::before {
     transform: translateY(-800px) rotate(360deg);
     opacity: 1;
   }
- }
+}
 
 @media (min-width: 800px) {
-	.sidebar {
+  .sidebar {
     display: block !important;
-    animation: none ;
+    animation: none;
   }
 
-	.openSidebar {
-		display: none !important;
+  .openSidebar {
+    display: none !important;
   }
 
-	.page-section {
-		margin-left: 240px;
+  .page-section {
+    margin-left: 240px;
   }
-  
+
   .toggle-mode {
     display: block;
   }
