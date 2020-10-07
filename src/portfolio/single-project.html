@@ -1,138 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portafolio</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0px;
-      padding: 0px;
-    }
-    .box{
-      position: relative;
-      width: 330px;
-      height:  200px;
-      transform-style: preserve-3d;
-      animation: circle-horizontal 20s linear infinite;
-      margin-top: 280px;
-    }
-    .box  span {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform-origin: center;
-      transform-style: preserve-3d;
-      transform: rotateX(calc(var(--i) * 60deg)) translateZ(350px);
-    }
-
-    .box .exception {
-      transform: rotateX(calc(var(--i) * 90deg)) translateZ(250px) !important;
-    }
-
-    @keyframes circle-horizontal{
-      0% {
-        transform: perspective(2500px) rotateX(0deg);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="../../assets/logo.png" />
+    <title>Portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
       }
-      100% {
-        transform: perspective(2500px) rotateX(360deg);
+      .box {
+        position: relative;
+        width: 330px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: circle-horizontal 20s linear infinite;
+        margin-top: 280px;
       }
-    }
-
-    @keyframes circle-vertical {
-      0% {
-        transform: perspective(1500px) rotateY(0deg);
-      }
-      100% {
-        transform: perspective(1500px) rotateY(360deg);
-      }
-    }
-    .box img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 15px;
-      top: 0;
-      left: 0;;
-    }
-
-    .description {
-      margin-top: 300px;
-    }
-
-    @media (min-width: 1001px) {
-      .box{
-        margin-top: 130px;
-        animation: circle-vertical 20s linear infinite;
-      }
-      .box  span {
-        transform: rotateY(calc(var(--i) * 60deg)) translateZ(350px);
-        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0003);
+      .box span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateX(calc(var(--i) * 60deg)) translateZ(350px);
       }
 
       .box .exception {
-        transform: rotateY(calc(var(--i) * 90deg)) translateZ(250px) !important;
+        transform: rotateX(calc(var(--i) * 90deg)) translateZ(250px) !important;
       }
 
+      @keyframes circle-horizontal {
+        0% {
+          transform: perspective(2500px) rotateX(0deg);
+        }
+        100% {
+          transform: perspective(2500px) rotateX(360deg);
+        }
+      }
+
+      @keyframes circle-vertical {
+        0% {
+          transform: perspective(1500px) rotateY(0deg);
+        }
+        100% {
+          transform: perspective(1500px) rotateY(360deg);
+        }
+      }
       .box img {
-        object-position: left top;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
       }
 
       .description {
-        margin-top: 125px;
+        margin-top: 300px;
       }
-    }
-  </style>
-</head>
-<body style="background: #111821; color: #fff;">
-	<section class="page-section">
-		<div class="container">
-      <div class="row m-0">
-        <div class="col mt-4">
-          <button 
-            class="btn btn-lg btn-outline-light mb-3" 
-            style="border-radius: 100%; border: none;" 
-            onclick="goBack()">
-            <i class="fas fa-arrow-left"></i>
-          </button>
-          <h1 
-            style="font-family: Arial, Helvetica, sans-serif; font-size: 35px;"
-            class="font-weight-bold text-center"
-            id="title"
-          >
-          </h1>
-          <div class="col-12 mx-auto box" id="galery">
+
+      @media (min-width: 1001px) {
+        .box {
+          margin-top: 130px;
+          animation: circle-vertical 20s linear infinite;
+        }
+        .box span {
+          transform: rotateY(calc(var(--i) * 60deg)) translateZ(350px);
+          -webkit-box-reflect: below 0px
+            linear-gradient(transparent, transparent, #0003);
+        }
+
+        .box .exception {
+          transform: rotateY(calc(var(--i) * 90deg)) translateZ(250px) !important;
+        }
+
+        .box img {
+          object-position: left top;
+        }
+
+        .description {
+          margin-top: 125px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background: #111821; color: #fff">
+    <section class="page-section">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col mt-4">
+            <button
+              class="btn btn-lg btn-outline-light mb-3"
+              style="border-radius: 100%; border: none"
+              onclick="goBack()"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 35px"
+              class="font-weight-bold text-center"
+              id="title"
+            ></h1>
+            <div class="col-12 mx-auto box" id="galery"></div>
+            <h1
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 35px"
+              class="font-weight-bold mx-md-5 mx-1 description"
+              id="name"
+            >
+              Descripcion Breve
+            </h1>
+            <p class="mx-md-5 mx-1" id="description"></p>
           </div>
-          <h1 
-            style="font-family: Arial, Helvetica, sans-serif; font-size: 35px;"
-            class="font-weight-bold mx-md-5 mx-1 description"
-            id="name"
-          >
-            Descripcion Breve
-          </h1>
-          <p class="mx-md-5 mx-1" id="description">
-          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container text-center mt-5 pb-2">
-      <h6 class="m-0" style="color: #54B689;">
-        <span style="color: rgb(110, 110, 110);">Copyright ©</span> todos los derechos reservados
-      </h6>
-    </div>
-  </footer>
+    <footer>
+      <div class="container text-center mt-5 pb-2">
+        <h6 class="m-0" style="color: #54b689">
+          <span style="color: rgb(110, 110, 110)">Copyright ©</span> todos los
+          derechos reservados
+        </h6>
+      </div>
+    </footer>
 
-  <script src="./single-project.js"></script>
-  <script src="../global.js"></script>
-</body>
+    <script src="./single-project.js"></script>
+    <script src="../global.js"></script>
+  </body>
 </html>

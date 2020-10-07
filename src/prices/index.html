@@ -1,226 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portafolio</title>
-  <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="../global.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="../../assets/logo.png" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- <style>
     :root{
       --primary: #54B689 !important;
       --secondary: #1e2a3a !important;
       --text: #fff !important;
     }
   </style> -->
-</head>
-<body class="contaner">
-  <!-- nav sidebar -->
-  <nav class="sidebar animate-left px-3">
-    <div class="data-sidebar text-center mb-4">
-      <h4 class="my-4" style="font-family: Arial, Helvetica, sans-serif;"><b>Carlos Mamani</b></h4>
-			<div class="profile">
-				<img 
-					src="https://i.imgur.com/Y5mtr7w.jpg" 
-					height="100%" 
-					width="100%" 
-					alt="profile"
-				>
+  </head>
+  <body class="contaner">
+    <!-- nav sidebar -->
+    <nav class="sidebar animate-left px-3">
+      <div class="data-sidebar text-center mb-4">
+        <h4 class="my-4" style="font-family: Arial, Helvetica, sans-serif">
+          <b>Carlos Mamani</b>
+        </h4>
+        <div class="profile">
+          <img
+            src="https://i.imgur.com/Y5mtr7w.jpg"
+            height="100%"
+            width="100%"
+            alt="profile"
+          />
+        </div>
+        <p style="font-size: 13px; margin: 10px 0">
+          Hola, soy Desarrollor de Apps y Paginas Web, bienvenido a mi pagina
+          web personal.
+        </p>
       </div>
-      <p style="font-size: 13px; margin: 10px 0;">Hola, soy Desarrollor de Apps y Paginas Web, bienvenido a mi pagina web personal.</p>
-    </div>
 
-    <ul style="list-style: none; padding: 0; text-align: center;" class="socialnetwork mb-3">
-      <li class="p-2">
-        <a href="https://twitter.com/dev_junker" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="p-2">
-        <a href="https://www.facebook.com/jhomanii" target="_blank">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-      </li>
-      <li class="p-2">
-        <a href="https://www.linkedin.com/in/juan-carlos-mamani-flores-6316441a7/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-      <li class="p-2">
-        <a href="https://www.github.com/jhomani" target="_blank">
-          <i class="fab fa-github-alt"></i>
-        </a>
-      </li>
-    </ul>
-
-    <hr style="border-top-color: #fff2; margin: 10px 0">
-
-		<div class="nav-tags mt-3">
-			<a href="../../index.html" onclick="closeSidebar()" class="text-light" style="text-decoration: none;">
-				<div class="tag pl-3 py-2">
-          <i class="fas fa-user"></i>
-					<span class="ml-3">Acerca de mi</span>
-				</div>
-			</a>
-			<a href="../portfolio/index.html" onclick="closeSidebar()" style="text-decoration: none;">
-				<div class="tag pl-3 py-2">
-          <i class="fas fa-laptop-code"></i>
-					<span class="ml-3">Portafolio</span>
-				</div>
-			</a>
-			<a href="#" class="text-light" onclick="closeSidebar()" style="text-decoration: none; color: var(--primary) !important;">
-				<div class="tag pl-3 py-2">
-          <i class="fas fa-briefcase"></i>
-					<span class="ml-3">Servicion & Precios</span>
-				</div>
-			</a>
-			<a href="../contact/index.html" class="text-light" onclick="closeSidebar()" style="text-decoration: none;">
-				<div class="tag pl-3 py-2">
-          <i class="fas fa-envelope-open-text"></i>
-					<span class="ml-3">Contactame</span>
-				</div>
-      </a>
-			<a href="../resume/index.html" class="text-light" onclick="closeSidebar()" style="text-decoration: none;">
-				<div class="tag pl-3 py-2">
-          <i class="fas fa-file-contract"></i>
-					<span class="ml-3">Curriculum</span>
-				</div>
-      </a>
-    </div>
-
-    <div class="toggle-mode text-center" style="font-size: 25px;">
-      <hr style="border-top-color: #fff2; margin: 10px 0">
-
-      <i class="fab fa-html5"></i>
-      <i class="fab fa-css3-alt"></i>
-      <i class="fab fa-bootstrap"></i>
-      <i class="fab fa-js-square"></i>
-      <img 
-        src="../../assets/firebase.png" 
-        alt="firebase"
-        width="28px"
-        style="margin: 0 0 7px -4px; filter: grayscale(100%);"
-       >
-    </div>
-	</nav>
-  <!-- /nav sidebar -->
-
-	<div id="overlay" ></div>
-	<section class="page-section">
-    <div class="openSidebar ">
-      <div 
-        class="d-flex justify-content-between align-items-center p-3 px-4"
-        style="background:#1e2a3a ;"
+      <ul
+        style="list-style: none; padding: 0; text-align: center"
+        class="socialnetwork mb-3"
       >
-        <i 
-          class="fas fa-bars p-2" 
-          style="font-size: 25px; cursor: pointer;"
-          onclick="openSidebar()"
-        ></i>
-
-        <div style="font-size: 25px">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-bootstrap"></i>
-          <i class="fab fa-js-square"></i>
-          <img 
-            src="../../assets/firebase.png" 
-            alt="firebase"
-            width="28px"
-            style="margin: 0 0 9px -4px; filter: grayscale(100%);"
+        <li class="p-2">
+          <a href="https://twitter.com/dev_junker" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="p-2">
+          <a href="https://www.facebook.com/jhomanii" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="p-2">
+          <a
+            href="https://www.linkedin.com/in/juan-carlos-mamani-flores-6316441a7/"
+            target="_blank"
           >
-        </div>
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="p-2">
+          <a href="https://www.github.com/jhomani" target="_blank">
+            <i class="fab fa-github-alt"></i>
+          </a>
+        </li>
+      </ul>
 
+      <hr style="border-top-color: #fff2; margin: 10px 0" />
+
+      <div class="nav-tags mt-3">
+        <a
+          href="../../index.html"
+          onclick="closeSidebar()"
+          class="text-light"
+          style="text-decoration: none"
+        >
+          <div class="tag pl-3 py-2">
+            <i class="fas fa-user"></i>
+            <span class="ml-3">Acerca de mi</span>
+          </div>
+        </a>
+        <a
+          href="../portfolio/index.html"
+          onclick="closeSidebar()"
+          style="text-decoration: none"
+        >
+          <div class="tag pl-3 py-2">
+            <i class="fas fa-laptop-code"></i>
+            <span class="ml-3">Portafolio</span>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="text-light"
+          onclick="closeSidebar()"
+          style="text-decoration: none; color: var(--primary) !important"
+        >
+          <div class="tag pl-3 py-2">
+            <i class="fas fa-briefcase"></i>
+            <span class="ml-3">Servicion & Precios</span>
+          </div>
+        </a>
+        <a
+          href="../contact/index.html"
+          class="text-light"
+          onclick="closeSidebar()"
+          style="text-decoration: none"
+        >
+          <div class="tag pl-3 py-2">
+            <i class="fas fa-envelope-open-text"></i>
+            <span class="ml-3">Contactame</span>
+          </div>
+        </a>
+        <a
+          href="../resume/index.html"
+          class="text-light"
+          onclick="closeSidebar()"
+          style="text-decoration: none"
+        >
+          <div class="tag pl-3 py-2">
+            <i class="fas fa-file-contract"></i>
+            <span class="ml-3">Curriculum</span>
+          </div>
+        </a>
       </div>
-    </div>
 
-    <section class="container">
-      <div class="row">
-        <div class="col mt-5">
-          <h1 
-            style="font-family: Arial, Helvetica, sans-serif; font-size: 35px;"
-            class="font-weight-bold text-center"
-          >
-            Servicios & Precios
-          </h1>
-          <p class="mx-md-5 mx-2 my-3 text-center">
-             Por motivos de inicio como <b style="color: var(--primary);">Desarrollador Freelance</b>, te ofresco los mejores precios del mercado el lo que se trata de applicaciones Web y Moviles desarrolladas con tecnologias modernas.
-          </p>
-        </div>
+      <div class="toggle-mode text-center" style="font-size: 25px">
+        <hr style="border-top-color: #fff2; margin: 10px 0" />
+
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-bootstrap"></i>
+        <i class="fab fa-js-square"></i>
+        <img
+          src="../../assets/firebase.png"
+          alt="firebase"
+          width="28px"
+          style="margin: 0 0 7px -4px; filter: grayscale(100%)"
+        />
       </div>
+    </nav>
+    <!-- /nav sidebar -->
 
-      <hr style="border-top-color: #fff2; margin: 10px 0">
+    <div id="overlay"></div>
+    <section class="page-section">
+      <div class="openSidebar">
+        <div
+          class="d-flex justify-content-between align-items-center p-3 px-4"
+          style="background: #1e2a3a"
+        >
+          <i
+            class="fas fa-bars p-2"
+            style="font-size: 25px; cursor: pointer"
+            onclick="openSidebar()"
+          ></i>
 
-      <div class="row px-3 mt-5">
-        <div class="col text-center mb-3">
-          <div class="card-product p-4 mx-auto">
-            <i class="fab fa-shopify mb-3 icon-price" style="font-size: 120px;"></i>
-            <h2 class="font-weight-bold">Plan Basico</h2>
-            <h3 style="color: var(--primary);">Bs. 800</h3>
-            <hr style="border-top-color: #fff5; margin: 20px 0">
-            <div class="text-left px-3">
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>8 paginas internas.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Hosting Incluido.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Dominio Incluido.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Formulario de Contacto.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Correos corporativos.</p>
-              <p><i class="fas fa-times mr-3" style="color: var(--danger)"></i>Carrito de Compras</p>
-              <p><i class="fas fa-times mr-3" style="color: var(--danger)"></i>Pasarela de Pagos</p>
-            </div>
-            <button class="btn-price" onclick="goContant()">Hacer Reserva</button>
+          <div style="font-size: 25px">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-bootstrap"></i>
+            <i class="fab fa-js-square"></i>
+            <img
+              src="../../assets/firebase.png"
+              alt="firebase"
+              width="28px"
+              style="margin: 0 0 9px -4px; filter: grayscale(100%)"
+            />
           </div>
         </div>
-        <div class="col text-center mb-3">
-          <div class="card-product p-4 mx-auto">
-            <i class="fas fa-cart-plus mb-3 icon-price" style="font-size: 120px;"></i>
-            <h2 class="font-weight-bold">Plan Standar</h2>
-            <h3 style="color: var(--primary);">Bs. 1500</h3>
-            <hr style="border-top-color: #fff5; margin: 20px 0">
-            <div class="text-left px-3">
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>l4 paginas internas.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Hosting Incluido.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Dominio Incluido.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Formulario de Contacto.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Correos corporativos.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Carrito de Compras</p>
-              <p><i class="fas fa-times mr-3" style="color: var(--danger)"></i>Pasarela de Pagos</p>
-            </div>
-            <button class="btn-price" onclick="goContant()">Hacer Reserva</button>
+      </div>
+
+      <section class="container">
+        <div class="row">
+          <div class="col mt-5">
+            <h1
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 35px"
+              class="font-weight-bold text-center"
+            >
+              Servicios & Precios
+            </h1>
+            <p class="mx-md-5 mx-2 my-3 text-center">
+              Por motivos de inicio como
+              <b style="color: var(--primary)">Desarrollador Freelance</b>, te
+              ofresco los mejores precios del mercado el lo que se trata de
+              applicaciones Web y Moviles desarrolladas con tecnologias
+              modernas.
+            </p>
           </div>
         </div>
-        <div class="col text-center">
-          <div class="card-product p-4 mx-auto">
-            <i class="fas fa-store-alt mb-3 icon-price" style="font-size: 120px;"></i>
-            <h2 class="font-weight-bold">Plan Empresa</h2>
-            <h3 style="color: var(--primary);">Bs. 2000+</h3>
-            <hr style="border-top-color: #fff5; margin: 20px 0">
-            <div class="text-left px-3">
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>20 paginas internas.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Hosting Incluido.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Dominio Incluido.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Formulario de Contacto.</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Carrito de Compras</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Pasarela de pagos</p>
-              <p><i class="fas fa-check mr-3" style="color: var(--primary)"></i>Correos corporativos.</p>
+
+        <hr style="border-top-color: #fff2; margin: 10px 0" />
+
+        <div class="row px-3 mt-5">
+          <div class="col text-center mb-3">
+            <div class="card-product p-4 mx-auto">
+              <i
+                class="fab fa-shopify mb-3 icon-price"
+                style="font-size: 120px"
+              ></i>
+              <h2 class="font-weight-bold">Plan Basico</h2>
+              <h3 style="color: var(--primary)">Bs. 800</h3>
+              <hr style="border-top-color: #fff5; margin: 20px 0" />
+              <div class="text-left px-3">
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >8 paginas internas.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Hosting Incluido.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Dominio Incluido.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Formulario de Contacto.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Correos corporativos.
+                </p>
+                <p>
+                  <i class="fas fa-times mr-3" style="color: var(--danger)"></i
+                  >Carrito de Compras
+                </p>
+                <p>
+                  <i class="fas fa-times mr-3" style="color: var(--danger)"></i
+                  >Pasarela de Pagos
+                </p>
+              </div>
+              <button class="btn-price" onclick="goContant()">
+                Hacer Reserva
+              </button>
             </div>
-            <button class="btn-price" onclick="goContant()">Hacer Reserva</button>
+          </div>
+          <div class="col text-center mb-3">
+            <div class="card-product p-4 mx-auto">
+              <i
+                class="fas fa-cart-plus mb-3 icon-price"
+                style="font-size: 120px"
+              ></i>
+              <h2 class="font-weight-bold">Plan Standar</h2>
+              <h3 style="color: var(--primary)">Bs. 1500</h3>
+              <hr style="border-top-color: #fff5; margin: 20px 0" />
+              <div class="text-left px-3">
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >l4 paginas internas.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Hosting Incluido.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Dominio Incluido.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Formulario de Contacto.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Correos corporativos.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Carrito de Compras
+                </p>
+                <p>
+                  <i class="fas fa-times mr-3" style="color: var(--danger)"></i
+                  >Pasarela de Pagos
+                </p>
+              </div>
+              <button class="btn-price" onclick="goContant()">
+                Hacer Reserva
+              </button>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div class="card-product p-4 mx-auto">
+              <i
+                class="fas fa-store-alt mb-3 icon-price"
+                style="font-size: 120px"
+              ></i>
+              <h2 class="font-weight-bold">Plan Empresa</h2>
+              <h3 style="color: var(--primary)">Bs. 2000+</h3>
+              <hr style="border-top-color: #fff5; margin: 20px 0" />
+              <div class="text-left px-3">
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >20 paginas internas.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Hosting Incluido.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Dominio Incluido.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Formulario de Contacto.
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Carrito de Compras
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Pasarela de pagos
+                </p>
+                <p>
+                  <i class="fas fa-check mr-3" style="color: var(--primary)"></i
+                  >Correos corporativos.
+                </p>
+              </div>
+              <button class="btn-price" onclick="goContant()">
+                Hacer Reserva
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section> 
+      </section>
 
-		<footer>
-      <div class="container text-center mt-5 pb-2">
-        <h6 class="m-0" style="color: var(--primary);">
-          <span style="color: rgb(110, 110, 110);">Copyright ©</span> todos los derechos reservados
-        </h6>
-      </div>
-		</footer>
-	</section>
+      <footer>
+        <div class="container text-center mt-5 pb-2">
+          <h6 class="m-0" style="color: var(--primary)">
+            <span style="color: rgb(110, 110, 110)">Copyright ©</span> todos los
+            derechos reservados
+          </h6>
+        </div>
+      </footer>
+    </section>
 
-  <script src="../global.js"></script>
-  <script src="./index.js"></script>
-</body>
+    <script src="../global.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
